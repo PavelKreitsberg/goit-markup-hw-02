@@ -1,10 +1,16 @@
-body {
-  font-family: 'Roboto', sans-serif;
-  background-color: #ffffff;
-  color: #000000;
+:root {
+  --main-background-color: #ffffff;
+  --second-background-color: #2f303a;
+  --accent-color: #2196f3;
 }
 
 /* Global */
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--main-background-color);
+  color: #000000;
+}
 
 a {
   text-decoration: none;
@@ -13,25 +19,62 @@ ul {
   list-style: none;
 }
 
-/* Logo */
+/* Header */
 
 .header-logo {
   font-family: 'Raleway', sans-serif;
   color: #000000;
 }
 .header-logo > span {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
-/* Footer */
+.site-nav .link {
+  color: #000000;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1, 14;
+  letter-spacing: 2%;
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+.contacts .link {
+  color: #757575;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1, 14;
+  letter-spacing: 2%;
+}
+.contacts .link:hover,
+.contacts .link:focus {
+  color: var(--accent-color);
+}
+
+/* Footer  не работают стили. Нужно разобраться почему в хедере ок а тут нет*/
 
 .footer {
-  background-color: #2f303a;
+  background-color: var(--second-background-color);
 }
 .footer-logo {
   font-family: 'Raleway', sans-serif;
-  color: #ffffff;
+  color: var(--main-background-color);
 }
 .footer-logo > span {
-  color: #2196f3;
+  color: var(--accent-color);
+}
+.address .link {
+  color: #ffffff;
+  font-family: Roboto;
+  font-style: 400;
+  font-size: 14px;
+  line-height: 1, 46;
+  letter-spacing: 3%;
+}
+
+.address-list .contacts {
+  color: rgba(255, 255, 255, 0.6);
 }
