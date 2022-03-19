@@ -75,6 +75,7 @@ ul {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
+  cursor: pointer;
   }
 section h2 {
   font-style: 700;
@@ -137,15 +138,17 @@ footer {
   line-height: 1.46;
   letter-spacing: 0.03em;
 }
+.address .contacts:hover,
+.address .contacts:focus {
+  color: var(--accent-color);
+}
 .address .contacts {
   color: rgba(255, 255, 255, 0.6);
 }
 
-/* Portfolio */
 
-/* Filter */
 
-/* Our works */
+/* Portfolio */  /* Filter */
 
 .button-filter {
   background-color: var(--third-background-color);
@@ -154,12 +157,15 @@ footer {
   font-size: 16px;
   line-height: 1.63;
   letter-spacing: 0.03em;
+  cursor: pointer;
 }
 .button-filter:hover,
 .button-filter:focus {
   background-color: var(--accent-color);
   color: var(--main-background-color);
 }
+
+/* Our works */
 
 .our-projects-list h3,
 .our-projects-list p {
