@@ -1,7 +1,11 @@
 :root {
   --main-background-color: #ffffff;
   --second-background-color: #2f303a;
+  --third-background-color: #F5F4FA;
   --accent-color: #2196f3;
+  --main-content-text-color: #212121;
+  --second-content-text-color: #757575;
+  --
 }
 
 /* Global */
@@ -9,7 +13,7 @@
 body {
   font-family: 'Roboto', sans-serif;
   background-color: var(--main-background-color);
-  color: #000000;
+  color: var(--main-content-text-color);
 }
 
 a {
@@ -18,6 +22,7 @@ a {
 ul {
   list-style: none;
 }
+
 
 /* Header */
 
@@ -29,8 +34,9 @@ ul {
   color: var(--accent-color);
 }
 
-.site-nav .link {
-  color: #000000;
+.site-nav .link,
+.contacts .link {
+  color: var(--main-content-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -41,18 +47,81 @@ ul {
   color: var(--accent-color);
 }
 .contacts .link {
-  color: #757575;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+  color: var(--second-content-text-color);
 }
 .contacts .link:hover,
 .contacts .link:focus {
   color: var(--accent-color);
 }
 
-/* Footer */
+/* Main */
+
+.hero {
+  background-color: var(--second-background-color);
+}
+.hero h1 {
+  color: var(--main-background-color);
+  text-transform: uppercase;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+.button {
+  background-color: var(--accent-color);
+  color: var(--main-background-color);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  }
+section h2 {
+  font-style: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* Advantages section */
+
+.advantages-section {
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: left;
+  letter-spacing: 0.03em;
+}
+.advantages-section h3 {
+  text-transform: uppercase;
+}
+.advantages-section p {
+  color: var(--second-content-text-color);
+}
+
+/* Our team section */
+
+.our-team-section {
+  background-color: var(--third-background-color);
+}
+.our-team-section li {
+  background-color: var(--main-background-color);
+  width: 270px;
+}
+.our-team-section h3,
+.our-team-section p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+.our-team-section p {
+  color: var(--second-content-text-color);
+  font-weight: 400;
+}
+
+/* Footer (подумать над цветом лого-сделать изящнее) */
 
 footer {
   background-color: var(--second-background-color);
@@ -70,4 +139,40 @@ footer {
 }
 .address .contacts {
   color: rgba(255, 255, 255, 0.6);
+}
+
+/* Portfolio */
+
+/* Filter */
+
+/* Our works */
+
+.button-filter {
+  background-color: var(--third-background-color);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  letter-spacing: 0.03em;
+}
+.button-filter:hover,
+.button-filter:focus {
+  background-color: var(--accent-color);
+  color: var(--main-background-color);
+}
+
+.our-projects-list h3,
+.our-projects-list p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-align: left;
+}
+.our-projects-list p {
+  color: var(--second-content-text-color);
+  font-weight: 400;
+}
+.our-projects-list li {
+  width: 370px;
 }
