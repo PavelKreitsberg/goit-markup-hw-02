@@ -21,21 +21,20 @@ ul {
 
 /* Header */
 
-.header-logo {
+.logo {
   font-family: 'Raleway', sans-serif;
   color: #000000;
 }
-.header-logo > span {
+.logo > span {
   color: var(--accent-color);
 }
 
 .site-nav .link {
   color: #000000;
-  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 14px;
-  line-height: 1, 14;
-  letter-spacing: 2%;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -43,38 +42,32 @@ ul {
 }
 .contacts .link {
   color: #757575;
-  font-family: Roboto;
   font-weight: 500;
   font-size: 14px;
-  line-height: 1, 14;
-  letter-spacing: 2%;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 .contacts .link:hover,
 .contacts .link:focus {
   color: var(--accent-color);
 }
 
-/* Footer  не работают стили. Нужно разобраться почему в хедере ок а тут нет*/
+/* Footer */
 
-.footer {
+footer {
   background-color: var(--second-background-color);
 }
-.footer-logo {
-  font-family: 'Raleway', sans-serif;
+.logo.footer {
   color: var(--main-background-color);
 }
-.footer-logo > span {
-  color: var(--accent-color);
-}
 .address .link {
-  color: #ffffff;
-  font-family: Roboto;
-  font-style: 400;
+  color: var(--main-background-color);
+  font-style: normal;
+  font-weight: 400;
   font-size: 14px;
-  line-height: 1, 46;
-  letter-spacing: 3%;
+  line-height: 1.46;
+  letter-spacing: 0.03em;
 }
-
-.address-list .contacts {
+.address .contacts {
   color: rgba(255, 255, 255, 0.6);
 }
